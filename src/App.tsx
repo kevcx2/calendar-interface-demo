@@ -20,7 +20,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
-import { spacing } from '@mui/system';
 
 const FilterLabel = muiStyled(Typography)`
   font-weight: 600;
