@@ -18,6 +18,9 @@ import Box from '@mui/material/Box';
 import Autocomplete from '@mui/material/Autocomplete';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
+import { spacing } from '@mui/system';
 
 const FilterLabel = muiStyled(Typography)`
   font-weight: 600;
@@ -121,17 +124,14 @@ export default function App() {
         <Sidebar.Base />
         <Sidebar.Show>
           <Sidebar.Header>
-            Apr 12 Noc 12PM - 8AM
+            <Skeleton animation={false} variant="rectangular" height={30} width={200} />
           </Sidebar.Header>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
-          <p>Test123</p>
+            <Stack sx={{ margin: '20px' }} spacing={1}>
+            <div>Once closed, you will need to refresh the page to reopen the sidebar</div>
+            <Skeleton animation={false} variant="circular" width={40} height={40} />
+            <Skeleton animation={false} variant="rectangular" width={'100%'} height={60} />
+            <Skeleton animation={false} variant="rounded" width={'100%'} height={500} />
+            </Stack>
         </Sidebar.Show>
     </div>
     </Box>

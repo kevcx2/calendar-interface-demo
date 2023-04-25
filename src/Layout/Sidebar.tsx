@@ -6,7 +6,6 @@ import { useSidebar } from './sidebarService';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 
 const MAX_SIDEBAR_WIDTH = 700;
