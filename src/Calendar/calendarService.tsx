@@ -57,21 +57,6 @@ calendarUtility({
   ]
 });
 
-// interface CalendarNavigationState {
-//   calendarMonth: CalendarMonthType;
-//   selectedYear: number;
-//   selectedMonth: number;
-//   selectedWeek: number | undefined;
-//   selectedDay: number | undefined;
-//   selectMonth: (month: number) => void;
-//   selectNextMonth: () => void;
-//   selectPreviousMonth: () => void;
-//   selectWeek: (week: number) => void;
-//   selectNextWeek: () => void;
-//   selectPreviousWeek: () => void;
-//   selectDay:(day: number) => void;
-// }
-
 interface CalendarState {
   calendarMonth: CalendarMonthType
   selectedMonth: number;
